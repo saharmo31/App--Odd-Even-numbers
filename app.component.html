@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="div col-xs-12">
+    <app-gamecontrol (IntervalCreated)= "IntervalGenerated($event)" ></app-gamecontrol>
+  </div>
+</div>
+
+<div class="row">
+  <div class="div col-xs-12">
+    <app-even *ngFor="let eveitem of evenNum"  [showEven]="eveitem"> </app-even>
+  </div>
+</div>
+
+<div class="row">
+  <div class="div col-sx-12">
+    <app-odd  *ngFor="let odditem of oddNum "  [showOdd]="odditem" ></app-odd>
+  </div>
+</div>
